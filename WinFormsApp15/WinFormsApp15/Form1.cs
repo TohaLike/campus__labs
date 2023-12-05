@@ -25,7 +25,6 @@ namespace WinFormsApp15
             int max = b[b.Length - 1];
             int x = 0;
 
-
             if (min < max)
             {
                 x = b[0];
@@ -33,6 +32,7 @@ namespace WinFormsApp15
                 b[b.Length - 1] = x;
 
             }
+
 
             textBox2.Text = string.Join(",", b);
         }

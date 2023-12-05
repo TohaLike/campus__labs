@@ -29,10 +29,10 @@ namespace WinFormsApp16
         private void UpdateListBox()
         {
             listBox1.Items.Clear();
-            foreach (List<int> array in listOfArrays)
+            for (int i = 0; i < listOfArrays.Count; i++)
             {
-                string joinedNumbers = string.Join(", ", array);
-                listBox1.Items.Add(joinedNumbers);
+                string addArr = string.Join(", ", listOfArrays[i]);
+                listBox1.Items.Add(addArr);
             }
         }
 
@@ -53,12 +53,11 @@ namespace WinFormsApp16
 
             listBox2.Items.Clear();
 
-            foreach (var row in listOfArrays)
+            for (int i = 0; i < listOfArrays.Count;i++)
             {
-                string joinSwapNumbers = string.Join(", ", row);
+                string joinSwapNumbers = string.Join(", ", listOfArrays[i]);
                 listBox2.Items.Add(joinSwapNumbers);
             }
-
         }
     }
 }

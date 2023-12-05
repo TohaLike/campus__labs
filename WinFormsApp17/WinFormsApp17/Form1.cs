@@ -32,11 +32,13 @@ namespace WinFormsApp17
         private void UpdateListBox()
         {
             listBox1.Items.Clear();
-            foreach (List<int> array in listOfArrays)
+        
+            for (int i = 0; i < listOfArrays.Count; i++)
             {
-                string addArr = string.Join(", ", array);
+                string addArr = string.Join(", ", listOfArrays[i]);
                 listBox1.Items.Add(addArr);
             }
+   
         }
 
         private void button2_Click(object sender, EventArgs e)
